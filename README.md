@@ -1,4 +1,9 @@
-Commands:
+# Company ESG scoring based on SEC filings
+Repository for the Group Coursework component of COMP0087, UCL, 2021/2022
+
+
+
+Useful git commands:
 
 git clone https://github.com/catarinabarino/NLP-ESG-SCORING.git - clones this repository to the working directory
 git add - adds the files specified to the commit group
