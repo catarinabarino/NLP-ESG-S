@@ -4,8 +4,9 @@ from sec_api import QueryApi
 from sec_api import RenderApi ## couldn't get this to work to automatically download the reports
 import csv
 
+DATA_PATH = "../data/"
 # Import scores from sustainalytics csv - note filename MAY NEED TO CHANGE
-scores = pd.read_csv("Sustainalytics_scores.csv", sep=',', encoding='utf-8')
+scores = pd.read_csv(DATA_PATH + "Sustainalytics_scores.csv", sep=',', encoding='utf-8')
 
 # Initialise instance of QueryApi with your own personal api-key - YOU NEED TO CHANGE
 queryApi = QueryApi(api_key="ea7e88eafa2457053be77c61ced50251b313da7a476f9fbbe7fe551a8a9029a2")
@@ -40,7 +41,7 @@ for company in tickers:
 
 
 # Download the URLs into a csv
-with open('annual_report_urls.csv', 'w', newline='') as f:
+with open(DATA_PATH + 'annual_report_urls.csv', 'w', newline='') as f:
     col_names = ['Ticker', 'Annual Report Url']
     new_f = csv.DictWriter(f, fieldnames=col_names)
 
