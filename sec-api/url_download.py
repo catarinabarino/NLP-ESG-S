@@ -5,11 +5,14 @@ from sec_api import RenderApi ## couldn't get this to work to automatically down
 import csv
 
 DATA_PATH = "../data/"
+KEY = "cd14cef3cd609c771372140b11074fd9a2186476aa869963a35e23f648db193d" # CHANGE THIS
+
+
 # Import scores from sustainalytics csv - note filename MAY NEED TO CHANGE
-scores = pd.read_csv(DATA_PATH + "Sustainalytics_scores.csv", sep=',', encoding='utf-8')
+scores = pd.read_csv(DATA_PATH + "Sustainalytics_scores_v2.csv", sep=',', encoding='utf-8')
 
 # Initialise instance of QueryApi with your own personal api-key - YOU NEED TO CHANGE
-queryApi = QueryApi(api_key="ea7e88eafa2457053be77c61ced50251b313da7a476f9fbbe7fe551a8a9029a2")
+queryApi = QueryApi(api_key=KEY)
 
 # renderApi = RenderApi(api_key="ea7e88eafa2457053be77c61ced50251b313da7a476f9fbbe7fe551a8a9029a2")
 ## couldn't get this to work to automatically download the reports
