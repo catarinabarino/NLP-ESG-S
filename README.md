@@ -2,7 +2,7 @@
 Repository for the Group Coursework component of COMP0087, UCL, 2021/2022
 
 # To-do for everyone:
-Create a folder in the root directory named data and put all your data in that folde. I've already updated the code to read data from and write data to that folder. It will be ignored by git so we do not store data on GitHub. Make sure to put all your data from api pulls / analysis on the shared Google Drive folder. Link to Google Drive folder:
+Create a folder in the root directory named "data" localy and put all your data in that folder. I've already updated the code to read data from and write data to that folder. It will be ignored by git so we do not store data on GitHub. Make sure to put all your data from api pulls / analysis on the shared Google Drive folder. Link to Google Drive folder:
 
 https://drive.google.com/drive/folders/1WHH_gMXa0mbbiNMDOXu04dIv6vXE8kLI?usp=sharing
 
